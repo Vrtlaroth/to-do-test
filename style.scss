@@ -1,0 +1,160 @@
+html,
+body,
+#root {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-wrapper {
+    min-width: 400px;
+    width: 400px;
+    max-width: 400px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    padding: 5px 15px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: hsl(249, 10%, 26%);
+    margin-bottom: 15px;
+    outline: none;
+
+    &::placeholder {
+        color: hsl(246, 25%, 77%);
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    &:focus {
+        border-radius: 5px;
+        border: 1px solid hsl(246, 25%, 77%);
+    }
+
+}
+
+.addButton {
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    height: 40px;
+    padding: 5px 20px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    outline: none;
+
+    &::after {
+        font-family: "FontAwesome";
+        font-weight: 900;
+        font-size: 12px;
+        content: "\f067";
+    }
+
+}
+
+
+.input-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.removeButton {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #ff7c7c;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        font-family: "FontAwesome";
+        font-weight: 900;
+        font-size: 16px;
+        content: "\f1f8";
+        position: absolute;
+        top: 6px;
+        left: 9px;
+    }
+}
+
+.todoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    min-width: 400px;
+    width: 400px;
+    max-width: 400px;
+}
+
+.todoList li {
+    list-style-type: none;
+}
+
+.todoList li.done {
+    text-decoration: line-through;
+}
+
+.todo-item {
+    height: 50px;
+    border: 1px solid hsl(246, 25%, 77%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.text-span {
+    margin: 0 15px;
+}

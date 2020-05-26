@@ -1,0 +1,218 @@
+html,
+body,
+#root {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-wrapper {
+  min-width: 400px;
+  width: 400px;
+  max-width: 400px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+input[type=text] {
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #b9b6d3;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #3e3c49;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+input[type=text]::-webkit-input-placeholder {
+  color: #b9b6d3;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+input[type=text]:-ms-input-placeholder {
+  color: #b9b6d3;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+input[type=text]::-ms-input-placeholder {
+  color: #b9b6d3;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+input[type=text]::placeholder {
+  color: #b9b6d3;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+input[type=text]:focus {
+  border-radius: 5px;
+  border: 1px solid #b9b6d3;
+}
+
+.addButton {
+  background-color: #38cc8c;
+  text-transform: uppercase;
+  height: 40px;
+  padding: 5px 20px;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  outline: none;
+}
+
+.addButton::after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  font-size: 12px;
+  content: "\f067";
+}
+
+.input-button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.removeButton {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #ff7c7c;
+  border-radius: 5px;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.removeButton::before {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  font-size: 16px;
+  content: "\f1f8";
+  position: absolute;
+  top: 6px;
+  left: 9px;
+}
+
+.todoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  min-width: 400px;
+  width: 400px;
+  max-width: 400px;
+}
+
+.todoList li {
+  list-style-type: none;
+}
+
+.todoList li.done {
+  text-decoration: line-through;
+}
+
+.todo-item {
+  height: 50px;
+  border: 1px solid #b9b6d3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 20px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.text-span {
+  margin: 0 15px;
+}
+/*# sourceMappingURL=style.css.map */
